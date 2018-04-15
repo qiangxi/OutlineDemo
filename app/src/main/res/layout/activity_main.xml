@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.qiangxi.outlinedemo.MainActivity"/>
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_bg"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:onClick="@{(v)->presenter.addTranslationZ(v)}"
+            android:text="ShapeDrawable"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_circle_bg"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="ShapeDrawable"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_orange_dark"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="Color"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/image_bg"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="image"/>
+
+    </LinearLayout>
+</layout>
