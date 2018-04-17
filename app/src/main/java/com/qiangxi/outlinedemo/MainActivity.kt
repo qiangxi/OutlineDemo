@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         mBinding.presenter = this
-        mBinding.tv1.outlineProvider = RectangleOutlineLeft()
-        mBinding.tv2.outlineProvider = RectangleOutlineTop()
-        mBinding.tv3.outlineProvider = RectangleOutlineRight()
-        mBinding.tv4.outlineProvider = RectangleOutlineBottom()
+//        mBinding.tv1.outlineProvider = RectangleOutlineLeft()
+//        mBinding.tv2.outlineProvider = RectangleOutlineTop()
+//        mBinding.tv3.outlineProvider = RectangleOutlineRight()
+//        mBinding.tv4.outlineProvider = RectangleOutlineBottom()
 
         mAnimator = ValueAnimator.ofFloat(0F, 20F)
         mAnimator.duration = 3000
